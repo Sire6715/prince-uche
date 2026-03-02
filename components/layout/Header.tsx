@@ -13,10 +13,10 @@ const Header = () => {
         <div className="mr-8">
           <ul className="flex gap-6">
             <li className="font-semibold primary hover:primary-hover">
-              <Link href={"/resume"}>RESUME</Link>
+              <Link href="/resume">RESUME</Link>
             </li>
             <li className="font-semibold primary hover:primary-hover">
-              <Link href={"/mailto:uchepibe@gmail.com"}>CONTACT</Link>
+              <Link href={"mailto:uchepibe@gmail.com"}>CONTACT</Link>
             </li>
           </ul>
         </div>
