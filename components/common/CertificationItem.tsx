@@ -9,6 +9,7 @@ export interface CertificationProps {
   link: string;
   description: string;
   delay?: number;
+  isLast?: boolean
 }
 
 export default function CertificationItem({
@@ -18,10 +19,13 @@ export default function CertificationItem({
   link,
   description,
   delay = 0,
+  isLast=false
 }: CertificationProps) {
   return (
-    <div className="relative pl-25 pb-14 mb-0">
-      <div className="absolute left-2.25 top-5 bottom-0 w-0.5 bg-foreground-muted" />
+    <div className={`relative pl-13 lg:pl-25 ${isLast ? "pb-0" : "pb-14" } mb-0`}>
+      {!isLast && (
+    <div className="absolute left-2.25 top-5 bottom-0 w-0.5 bg-foreground-muted" />
+  )}
       <span className="absolute left-0 top-1.5 z-10 flex h-5 w-5 items-center cursor-pointer justify-center bg-primary hover:bg-primary-hover rounded-full bg-primary ring-4 ring-foreground-muted shadow-[0_0_0_2px_#c850c0] border-2 border-white" />
 
       <motion.div
@@ -36,15 +40,15 @@ export default function CertificationItem({
         }}
         className="will-change-transform"
       >
-        <h3 className="text-3xl font-semibold tracking-tight">
+        <h3 className="text-xl lg:text-3xl font-semibold tracking-tight">
           {label}
         </h3>
 
-        <p className="mt-1 text-foreground-muted text-2xl text-foreground font-mono">
+        <p className="mt-1 text-foreground-muted text-sm lg:text-2xl font-mono">
           {issuer} | {period}
         </p>
 
-        <p className="mt-2 text-xl leading-relaxed text-foreground max-w-xl">
+        <p className="mt-2 text-sm lg:text-xl leading-relaxed text-foreground max-w-xl">
           {description}
         </p>
 
@@ -53,17 +57,17 @@ export default function CertificationItem({
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="
+          className={`
             inline-block
             rounded-md bg-primary hover:bg-primary-hover
-            px-30 py-4 text-[20px]
+            px-15 lg:px-30 py-2 lg:py-4 text-[15px] lg:text-[20px]
              text-white
             transition-all
             hover:opacity-90 hover:scale-[1.03]
             active:scale-95
             self-center
-            my-10
-          "
+            ${isLast ? "mb-0 mt-10" : "my-10"}
+          `}
         >
           View Certificate
         </a>

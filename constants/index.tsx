@@ -266,7 +266,7 @@ export const CERTIFICATIONS = [
   {
     label: "Professional Foundation Certificate",
     issuer: "ALX",
-    period: "Mar 2023 – Jun 2023",
+    period: "15th April 2025",
     link: "https://intranet.alxswe.com/certificates/professional-foundation",
     description:
       "Collaborated with peers on group projects, practiced technical communication, managed deadlines, and applied problem-solving frameworks to real-life case studies and simulations.",
@@ -274,7 +274,7 @@ export const CERTIFICATIONS = [
   {
     label: "Prodev Frontend Certificate",
     issuer: "ALX",
-    period: "Aug 2025",
+    period: "22nd Aug 2025",
     link: "https://intranet.alxswe.com/certificates/prodev-frontend",
     description:
       "Built responsive web interfaces using React, JavaScript, and Tailwind CSS, implemented reusable components, optimized page performance, and collaborated through GitHub workflows.",
@@ -282,7 +282,7 @@ export const CERTIFICATIONS = [
   {
     label: "Data Analyst Certificate",
     issuer: "ALX",
-    period: "Aug 2025",
+    period: "28th Aug 2025",
     link: "https://intranet.alxswe.com/certificates/data-analyst",
     description:
       "Collected, cleaned, and analyzed large datasets using Python and SQL, created dashboards and reports, and translated raw data into actionable business insights.",
@@ -290,7 +290,7 @@ export const CERTIFICATIONS = [
   {
     label: "Python Learning Certificate",
     issuer: "ALX",
-    period: "Oct 2025",
+    period: "24th Nov 2025",
     link: "https://intranet.alxswe.com/certificates/python-learning",
     description:
       "Developed automation scripts, implemented data structures, handled files and APIs, and solved algorithmic problems using Python in practical project-based exercises.",
@@ -298,7 +298,7 @@ export const CERTIFICATIONS = [
   {
     label: "Data Literacy Certificate",
     issuer: "DataCamp",
-    period: "Nov 2025",
+    period: "Dec 2025",
     link: "https://www.datacamp.com/statement-of-accomplishment/course/data-literacy",
     description:
       "Interpreted datasets, evaluated data quality, created data-driven narratives, and presented insights clearly to support informed decision-making.",
@@ -306,7 +306,7 @@ export const CERTIFICATIONS = [
   {
     label: "GitHub Foundations",
     issuer: "DataCamp",
-    period: "Nov 2025",
+    period: "Dec 2025",
     link: "https://www.datacamp.com/statement-of-accomplishment/course/github-foundations",
     description:
       "Managed repositories, created feature branches, reviewed pull requests, resolved merge conflicts, and collaborated on shared codebases using GitHub best practices.",

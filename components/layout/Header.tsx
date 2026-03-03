@@ -1,21 +1,47 @@
 "use client";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import ThemeToggle from "../portfolio/ThemeToggle";
 
-const Header = () => {
+const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
   return (
-    <nav className="bg-background text-foreground px-12 py-6 flex justify-between align-middle">
+    <nav className="bg-background text-foreground lg:px-12 lg:py-6 flex justify-between align-middle">
       <div>
-        <h1 className="font-black text-4xl m-0 p-0">UP</h1>
+        <h1 className="font-black text-4xl lg:text-6xl p-6 lg:m-0 lg:p-0">UP</h1>
       </div>
-      <div className="flex gap-4 justify-center items-center">
+
+      {/* Hamburger - mobile only */}
+      <button
+        onClick={onMenuClick}
+        className="flex lg:hidden items-center justify-center p-6 cursor-pointer"
+        aria-label="Open menu"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="icon icon-tabler icon-tabler-menu-2"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 6l16 0" />
+          <path d="M4 12l16 0" />
+          <path d="M4 18l16 0" />
+        </svg>
+      </button>
+
+      {/* Desktop nav */}
+      <div className="hidden lg:flex gap-4 justify-center items-center">
         <div className="mr-8">
           <ul className="flex gap-6">
             <li className="font-semibold primary hover:primary-hover">
               <Link href="/resume">RESUME</Link>
             </li>
-            <li className="font-semibold primary hover:primary-hover">
+            <li className="font-semibold hover:primary-hover">
               <Link href={"mailto:uchepibe@gmail.com"}>CONTACT</Link>
             </li>
           </ul>

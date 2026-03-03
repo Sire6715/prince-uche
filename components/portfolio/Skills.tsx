@@ -2,6 +2,7 @@ import { SkillProps } from "@/interfaces";
 import { cloneElement } from "react";
 
 const Skills = ({ skills }: { skills: SkillProps[] }) => {
+
   return (
     <ul className="flex flex-wrap mt-8 w-full gap-5">
       {skills.map((skill) => (
@@ -13,7 +14,7 @@ const Skills = ({ skills }: { skills: SkillProps[] }) => {
               color: skill.color,
             },
           )}
-          <span className="text-[14px]">{skill.label}</span>
+          <span className="text-[10px] lg:text-[17px]">{skill.label}</span>
         </li>
       ))}
     </ul>
