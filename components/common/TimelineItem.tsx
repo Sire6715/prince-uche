@@ -58,16 +58,14 @@ export default function TimelineItem({
           {period} | {location}
         </p>
 
-        <ul className="list-disc list-outside pl-4 space-y-2">
-          {bullets.map((point, i) => (
-            <li
-              key={i}
-              className="text-sm lg:text-xl leading-relaxed text-foreground"
-            >
-              {point}
-            </li>
-          ))}
-        </ul>
+        <ul className="list-none pl-4 space-y-2">
+  {bullets.map((point, i) => (
+    <li key={i} className="flex items-start gap-2 text-sm lg:text-xl leading-relaxed text-foreground">
+      <span className="mt-2 lg:mt-3 shrink-0 w-1.5 h-1.5 bg-foreground-muted rotate-45" />
+      {point}
+    </li>
+  ))}
+</ul>
       </motion.div>
     </div>
   );

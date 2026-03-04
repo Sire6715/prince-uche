@@ -1,4 +1,4 @@
-import { IconLabelProps, SkillProps } from "@/interfaces";
+import { IconLabelProps, SkillProps, TimelineItemProps, CertificationProps  } from "@/interfaces";
 import {
   SiTypescript,
   SiJavascript,
@@ -184,21 +184,6 @@ export const CONTACTS: IconLabelProps[] = [
   },
 ];
 
-export interface TimelineItemProps {
-  role: string;
-  company: string;
-  companyHref?: string;
-  period: string;
-  location: string;
-  bullets: string[];
-}
-
-export interface CertificationProps {
-  label: string;
-  issuer: string;
-  period: string;
-  link: string;
-}
 
 export const WORK_EXPERIENCE: TimelineItemProps[] = [
   {
@@ -267,7 +252,7 @@ export const CERTIFICATIONS = [
     label: "Professional Foundation Certificate",
     issuer: "ALX",
     period: "15th April 2025",
-    link: "https://intranet.alxswe.com/certificates/professional-foundation",
+    link: "https://savanna.alxafrica.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMElTSmc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--85b66099f998506f937502094c840d374727c264/89-professional-foundations-certificate-prince-uche.png",
     description:
       "Collaborated with peers on group projects, practiced technical communication, managed deadlines, and applied problem-solving frameworks to real-life case studies and simulations.",
   },
@@ -275,46 +260,46 @@ export const CERTIFICATIONS = [
     label: "Prodev Frontend Certificate",
     issuer: "ALX",
     period: "22nd Aug 2025",
-    link: "https://intranet.alxswe.com/certificates/prodev-frontend",
+    link: "https://www.alxafrica.com/",
     description:
       "Built responsive web interfaces using React, JavaScript, and Tailwind CSS, implemented reusable components, optimized page performance, and collaborated through GitHub workflows.",
   },
   {
     label: "Data Analyst Certificate",
     issuer: "ALX",
-    period: "28th Aug 2025",
-    link: "https://intranet.alxswe.com/certificates/data-analyst",
+    period: "",
+    link: "https://alx-intranet-active-storage-production.s3.amazonaws.com/75hkhfc65uo9patvnqs09as5xogn?response-content-disposition=inline%3B%20filename%3D%2251-data-analytics-certificate-prince-uche.png%22%3B%20filename%2A%3DUTF-8%27%2751-data-analytics-certificate-prince-uche.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20260224%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260224T161808Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=2d3ea675dd4feb7742d46194dce3a87e4c58f28b1bfbc05dc14e0c40bf46b147",
     description:
       "Collected, cleaned, and analyzed large datasets using Python and SQL, created dashboards and reports, and translated raw data into actionable business insights.",
   },
   {
     label: "Python Learning Certificate",
     issuer: "ALX",
-    period: "24th Nov 2025",
-    link: "https://intranet.alxswe.com/certificates/python-learning",
+    period: "",
+    link: "https://savanna.alxafrica.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNytqTXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4f669e09b72d3170f4a94e9217348313cb4b9b16/189-python-programming-certificate-prince-uche.png",
     description:
       "Developed automation scripts, implemented data structures, handled files and APIs, and solved algorithmic problems using Python in practical project-based exercises.",
   },
   {
     label: "Data Literacy Certificate",
     issuer: "DataCamp",
-    period: "Dec 2025",
-    link: "https://www.datacamp.com/statement-of-accomplishment/course/data-literacy",
+    period: "",
+    link: "https://www.datacamp.com/skill-verification/DL0034948978061",
     description:
       "Interpreted datasets, evaluated data quality, created data-driven narratives, and presented insights clearly to support informed decision-making.",
   },
   {
     label: "GitHub Foundations",
     issuer: "DataCamp",
-    period: "Dec 2025",
-    link: "https://www.datacamp.com/statement-of-accomplishment/course/github-foundations",
+    period: "",
+    link: "https://education.github.com/experiences/foundations_certificate",
     description:
       "Managed repositories, created feature branches, reviewed pull requests, resolved merge conflicts, and collaborated on shared codebases using GitHub best practices.",
   },
   {
     label: "B.Tech. Mathematics",
     issuer: "Federal University of Technology, Owerri",
-    period: "Jan 2019 – Dec 2024",
+    period: "| Jan 2019 – Dec 2024",
     link: "Imo State, Nigeria",
     description:
       "Completed advanced coursework and projects in calculus, linear algebra, and statistics, applied mathematical modeling to real-world problems, and developed strong analytical reasoning skills.",

@@ -11,9 +11,25 @@ export interface IconLabelProps{
      link: string;
 }
 
-// interfaces/index.ts
+
 export interface SkillProps {
   label: string;
   icon: React.ReactElement;
   color?: string;
+}
+
+export interface TimelineItemProps {
+  role: string;
+  company: string;
+  companyHref?: string;
+  period: string;
+  location: string;
+  bullets: string[];
+}
+
+export interface CertificationProps {
+  label: string;
+  issuer: string;
+  period: string;
+  link: string;
 }

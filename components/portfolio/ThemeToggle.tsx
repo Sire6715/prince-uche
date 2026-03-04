@@ -12,7 +12,7 @@ export default function ThemeToggle() {
   }, []);
 
   if (!mounted) {
-    return <div className="w-6 h-6" />; // Placeholder
+    return <div className="w-6 h-6" />;
   }
 
   return (
@@ -24,7 +24,7 @@ export default function ThemeToggle() {
               height="24"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="icon icon-tabler icons-tabler-filled icon-tabler-sun"
+              className="hover:text-primary hover:scale-110 transition-colors icon icon-tabler icons-tabler-filled icon-tabler-sun"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M12 19a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z" />
@@ -44,7 +44,7 @@ export default function ThemeToggle() {
               height="24"
               viewBox="0 0 24 24"
               fill="currentColor"
-              className="icon icon-tabler icons-tabler-filled icon-tabler-brightness"
+              className="hover:text-primary hover:scale-110 transition-colors icon icon-tabler icons-tabler-filled icon-tabler-brightness"
             >
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-9 1.732a8 8 0 0 0 4.001 14.928l-.001 -16a8 8 0 0 0 -4 1.072" />

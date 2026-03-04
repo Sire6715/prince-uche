@@ -6,7 +6,9 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
   return (
     <nav className="bg-background text-foreground lg:px-12 lg:py-6 flex justify-between align-middle">
       <div>
-        <h1 className="font-black text-4xl lg:text-6xl p-6 lg:m-0 lg:p-0">UP</h1>
+        <Link href="/">
+            <h1 className="font-black text-4xl lg:text-6xl p-6 lg:m-0 lg:p-0">UP</h1>
+        </Link>   
       </div>
 
       {/* Hamburger - mobile only */}
@@ -38,10 +40,10 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
       <div className="hidden lg:flex gap-4 justify-center items-center">
         <div className="mr-8">
           <ul className="flex gap-6">
-            <li className="font-semibold primary hover:primary-hover">
+            <li className="font-bold text-xl  hover:text-primary hover:scale-110 transition-colors">
               <Link href="/resume">RESUME</Link>
             </li>
-            <li className="font-semibold hover:primary-hover">
+            <li className="font-bold text-xl hover:text-primary hover:scale-110 transition-colors">
               <Link href={"mailto:uchepibe@gmail.com"}>CONTACT</Link>
             </li>
           </ul>
@@ -57,7 +59,7 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
+            className="hover:text-primary hover:scale-110 transition-colors icon icon-tabler icons-tabler-outline icon-tabler-brand-x"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 4l11.733 16h4.267l-11.733 -16l-4.267 0" />
@@ -75,7 +77,7 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
+            className="hover:text-primary hover:scale-110 transition-colors icon icon-tabler icons-tabler-outline icon-tabler-brand-github"
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />

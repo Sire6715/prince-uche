@@ -10,7 +10,6 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -18,8 +17,6 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
             onClick={onClose}
             className="fixed inset-0 z-40 bg-black/50"
           />
-
-          {/* Sidebar */}
           <motion.div
             initial={{ x: "100%" }}
             animate={{ x: 0 }}

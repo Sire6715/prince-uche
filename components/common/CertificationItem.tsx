@@ -45,7 +45,7 @@ export default function CertificationItem({
         </h3>
 
         <p className="mt-1 text-foreground-muted text-sm lg:text-2xl font-mono">
-          {issuer} | {period}
+          {issuer} {isLast ? period : ""}
         </p>
 
         <p className="mt-2 text-sm lg:text-xl leading-relaxed text-foreground max-w-xl">
@@ -58,7 +58,6 @@ export default function CertificationItem({
           target="_blank"
           rel="noreferrer"
           className={`
-            inline-block
             rounded-md bg-primary hover:bg-primary-hover
             px-15 lg:px-30 py-2 lg:py-4 text-[15px] lg:text-[20px]
              text-white
@@ -66,7 +65,7 @@ export default function CertificationItem({
             hover:opacity-90 hover:scale-[1.03]
             active:scale-95
             self-center
-            ${isLast ? "mb-0 mt-10" : "my-10"}
+            ${isLast ? "hidden" : "inline-block my-20"}
           `}
         >
           View Certificate

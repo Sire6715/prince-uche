@@ -1,7 +1,8 @@
+"use client"
 import Image from "next/image";
 import SectionBlock from "@/components/common/SectionBlock";
 import {
-  ArrowChevron,
+  ArrowChevron
 } from "@/components/common/Arrows";
 import IconLabel from "@/components/common/IconLabel";
 import { CONTACTS } from "@/constants";
@@ -12,9 +13,9 @@ export default function Home() {
     <div className="px-5 lg:p-0 flex h-screen flex-col items-center justify-center font-sans bg-background text-foreground">
       <div className="lg:w-[45%] max-w-full">
         <SectionBlock
-          title={"Hey, I'm <span class='text-warning'>Prince Uche! </span>"}
-          title_style="text-4xl lg:text-5xl bg-background text-foreground font-bold"
-          body_style="text-sm lg:text-xl  text-foreground"
+          title={"Hey, I'm <span class='text-warning '>Prince Uche! </span>"}
+          title_style="text-4xl lg:text-4xl opacity-80 bg-background text-foreground font-bold"
+          body_style="text-sm lg:text-xl opacity-80 text-foreground"
           body={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
           }
