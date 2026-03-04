@@ -8,7 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-urbanist);
+  --font-body: var(--font-outfit);
   --font-mono: var(--font-geist-mono);
 }
 
@@ -22,7 +23,11 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-lexend), sans-serif;
+  font-family: var(--font-urbanist), sans-serif;
+}
+
+p, li, blockquote, label, input, textarea {
+  font-family: var(--font-outfit), sans-serif;
 }
 
 * {
@@ -49,7 +54,9 @@ body {
   --color-success: rgb(34 197 94);
   --color-warning: rgb(234 179 8);
   --color-destructive: rgb(239 68 68);
-  --font-sans: var(--font-lexend);
+
+  --font-sans: var(--font-urbanist);
+  --font-body: var(--font-outfit);
 }
 
 .dark {
@@ -67,5 +74,7 @@ body {
 
   --color-border: rgb(45 38 90);
   --color-border-strong: rgb(70 58 130);
-  --font-sans: var(--font-lexend);
+
+  --font-sans: var(--font-urbanist);
+  --font-body: var(--font-outfit);
 }

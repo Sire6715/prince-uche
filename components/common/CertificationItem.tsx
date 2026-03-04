@@ -65,7 +65,7 @@ export default function CertificationItem({
             hover:opacity-90 hover:scale-[1.03]
             active:scale-95
             self-center
-            ${isLast ? "hidden" : "inline-block my-20"}
+            ${isLast ? "hidden" : "inline-block mt-20 mb-2"}
           `}
         >
           View Certificate
