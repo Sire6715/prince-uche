@@ -10,7 +10,7 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
     : [project.category];
 
   return (
-    <div className="bg-background text-foreground border border-foreground/10 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-foreground/30 hover:-translate-y-0.5">
+    <div className="bg-background text-foreground border border-foreground/10 rounded-2xl overflow-hidden flex flex-col transition-all duration-300 hover:border-foreground/30 hover:-translate-y-0.5 mb-15">
       {/* Image / placeholder */}
       <div className="w-full aspect-video bg-foreground/5 flex items-center justify-center relative overflow-hidden">
         {project.image ? (
@@ -80,11 +80,6 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
               onClick={() => setExpanded(!expanded)}
               className="bg-transparent border-none cursor-pointer text-foreground/50 hover:text-primary underline underline-offset-2 decoration-primary-subtle decoration-2 font-sans text-sm font-bold tracking-wide p-0 flex items-center gap-2 transition-colors duration-200"
             >
-              {/* <span
-                className="inline-block text-primary transition-transform duration-[250ms]"
-                style={{ transform: expanded ? "rotate(90deg)" : "rotate(0deg)" }}
-              >
-              </span> */}
               {expanded ? "Hide features" : "Read more"}
             </button>
 
@@ -94,7 +89,11 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
             >
               <ul className="mt-2.5 mb-0 pl-4 flex flex-col gap-1.5 list-disc">
                 {project.features.map((f, i) => (
-                  <li key={i} className="text-sm text-foreground/55 leading-relaxed">
+                  <li
+                    key={i}
+                    className="flex items-start align-middle gap-2 text-sm text-foreground/55 leading-relaxed"
+                  >
+                    <span className="mt-2 lg:mt-2 shrink-0 w-1.5 h-1.5 bg-foreground-muted rotate-45" />
                     {f}
                   </li>
                 ))}
@@ -113,25 +112,25 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
               className="flex items-center gap-1.5 text-foreground/50 hover:text-primary font-sans text-sm font-bold no-underline hover:underline transition-colors duration-200"
             >
               <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-primary"
-            >
-              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-              <path d="M7 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M7 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M17 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-              <path d="M7 8l0 8" />
-              <path d="M9 18h6a2 2 0 0 0 2 -2v-5" />
-              <path d="M14 7l3 -1" />
-            </svg>
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="text-primary"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M7 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M7 8l0 8" />
+                <path d="M9 18h6a2 2 0 0 0 2 -2v-5" />
+                <path d="M14 7l3 -1" />
+              </svg>
               Repo
             </a>
           )}
@@ -140,15 +139,15 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-foreground/50 hover:text-primary font-sans text-sm font-bold no-underline hover:underline decoration-warning decoration-2 transition-colors duration-200"
+              className="flex items-center gap-1.5 text-foreground/50 hover:text-primary font-sans text-sm font-bold no-underline hover:underline decoration-primary decoration-2 transition-colors duration-200"
             >
               <svg
-                width="14"
-                height="14"
+                width="22"
+                height="22"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2"className="text-primary"
               >
                 <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6" />
                 <polyline points="15 3 21 3 21 9" />

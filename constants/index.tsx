@@ -1,4 +1,10 @@
-import { IconLabelProps, SkillProps, TimelineItemProps, CertificationProps,ProjectProps  } from "@/interfaces";
+import {
+  IconLabelProps,
+  SkillProps,
+  TimelineItemProps,
+  CertificationProps,
+  ProjectProps,
+} from "@/interfaces";
 import {
   SiTypescript,
   SiJavascript,
@@ -19,11 +25,12 @@ import {
   SiFigma,
   SiJira,
   SiNotion,
-    SiChakraui,
-  SiShadcnui,SiCss
+  SiChakraui,
+  SiStreamlit,
+  SiShadcnui,
+  SiCss,
 } from "@icons-pack/react-simple-icons";
 import { Claude, OpenAI } from "@lobehub/icons";
-
 
 export const SKILLS: SkillProps[] = [
   {
@@ -56,6 +63,7 @@ export const SKILLS: SkillProps[] = [
     ),
     color: "#34A853",
   },
+  { label: "Streamlit", icon: <SiStreamlit />, color: "#FF4B4B" },
   {
     label: "Google Slides",
     icon: (
@@ -184,7 +192,6 @@ export const CONTACTS: IconLabelProps[] = [
   },
 ];
 
-
 export const WORK_EXPERIENCE: TimelineItemProps[] = [
   {
     role: "Intern Data Analyst",
@@ -195,8 +202,6 @@ export const WORK_EXPERIENCE: TimelineItemProps[] = [
       "Collaborated with product and engineering teams to analyze customer retention, onboarding efficiency, and churn patterns, producing weekly reports that informed product prioritization decisions.",
       "Developed analytics dashboards to track acquisition, feature usage, and revenue performance, reducing reporting time.",
       "Conducted behavioral analysis using login frequency, engagement metrics, and payment data to support a churn prediction model with ~78% accuracy.",
-      "Supported the creation of technical reports and strategic recommendations, contributing to an improvement in platform onboarding completion rates.",
-      "Contributed to feature planning initiatives including offline access modes and pricing optimization strategies.",
     ],
   },
   {
@@ -205,7 +210,6 @@ export const WORK_EXPERIENCE: TimelineItemProps[] = [
     period: "Dec 2023 – May 2024",
     location: "Rivers, Nigeria",
     bullets: [
-      "Managed and queried databases using Microsoft SQL Server, supporting data retrieval, updates, and reporting tasks that reduced manual query time by 30%.",
       "Used Excel to clean, organize, and analyze datasets, improving data accuracy and reliability for team decision-making.",
       "Supported minor development and automation tasks using C#, contributing to internal tools and process improvements.",
       "Assisted with documentation, troubleshooting, and preparing basic reports for team leads.",
@@ -241,9 +245,7 @@ export const EDUCATION: TimelineItemProps[] = [
     company: "Federal University of Technology, Owerri",
     period: "Jan 2019 – Dec 2024",
     location: "Imo State, Nigeria",
-    bullets: [
-      ""
-    ],
+    bullets: [""],
   },
 ];
 
@@ -306,34 +308,44 @@ export const CERTIFICATIONS: CertificationProps[] = [
   },
 ];
 
-export const PROJECTS: ProjectProps [] = [
+export const PROJECTS: ProjectProps[] = [
   {
     title: "Job Board",
     repo: "https://github.com/Sire6715/Interactive-Job-Board-Platform",
-    live: "",
+    live: "https://job-board-ebon-eta.vercel.app/",
     image: "/assets/images/Projects/JobBoard.png",
     category: "Web",
     description: "An online job boarding platform.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "API Integration", "React", "Framer Motion", "React Context API", "Vercel"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "API Integration",
+      "React",
+      "Framer Motion",
+      "React Context API",
+      "Vercel",
+    ],
     features: [
       "Filter by jobs, location and level",
       "Search for jobs, location and level",
       "API integration for live jobs (static dataset as backup if call fails)",
-      "Form for sending job applications"
-    ]
+      "Form for sending job applications",
+    ],
   },
   {
     title: "Personal Portfolio",
     repo: "https://github.com/Sire6715/prince-uche",
-    live: "",
+    live: "https://prince-uche.vercel.app/",
     image: "",
     category: "Web",
-    description: "A personal portfolio site built with Next.js, showcasing projects and identity as a developer.",
+    description:
+      "A personal portfolio site built with Next.js, showcasing projects and identity as a developer.",
     technologies: ["Next.js", "TypeScript", "CSS"],
     features: [
       "Home page, resume section, and links to projects",
-      "Responsive portfolio layout for professional presentation"
-    ]
+      "Responsive portfolio layout for professional presentation",
+    ],
   },
   {
     title: "Maji Ndogo",
@@ -341,54 +353,58 @@ export const PROJECTS: ProjectProps [] = [
     live: "",
     image: "/assets/images/Projects/Maji_ndogo.png",
     category: "Data",
-    description: "A comprehensive Power BI data analysis project examining water access, quality, safety, and improvement planning across the five provinces of Maji Ndogo.",
+    description:
+      "A comprehensive Power BI data analysis project examining water access, quality, safety, and improvement planning across the five provinces of Maji Ndogo.",
     technologies: ["Power BI", "DAX", "SQL"],
     features: [
       "Population distribution and water source types",
       "Queue times and gender dynamics at water collection points",
       "Water quality and contamination testing results",
       "Crime and safety data around water collection",
-      "Province-level infrastructure improvement plans and budget allocation"
-    ]
+      "Province-level infrastructure improvement plans and budget allocation",
+    ],
   },
   {
     title: "EA Sports FC 25 Dashboard",
     repo: "https://github.com/Sire6715/EA-SPORTS-FC-25-Player-Performance-Dashboard",
-    live: "",
-    image: "",
+    live: "https://ea-sports-fc-25-player-performance-dashboard.streamlit.app/",
+    image: "/assets/images/Projects/EA_SPORTS_FC_25_PLAYER.png",
     category: ["Web", "Data"],
-    description: "An interactive football analytics dashboard that analyzes player data from the EA SPORTS FC 25 database, allowing users to explore, compare, and scout players based on performance metrics.",
+    description:
+      "An interactive football analytics dashboard that analyzes player data from the EA SPORTS FC 25 database, allowing users to explore, compare, and scout players based on performance metrics.",
     technologies: ["Python", "Pandas", "Plotly", "Streamlit"],
     features: [
       "Filter and sort players by league, team, nationality, position, and attributes",
       "Compare two players side-by-side using visual charts",
       "Identify young talents (≤ 25 years) ranked by a custom Potential Index",
-      "Dynamic and responsive charts built with Plotly"
-    ]
+      "Dynamic and responsive charts built with Plotly",
+    ],
   },
   {
     title: "Room Listing App",
     repo: "https://github.com/Sire6715/room-homepage",
-    live: "",
+    live: "https://room-homepag3.netlify.app/",
     image: "/assets/images/Projects/room_homepage.jpg",
     category: "Web",
-    description: "A modern responsive furniture showcase homepage built with React and Tailwind CSS, designed to display room scenes and furniture products with interactive visuals and smooth navigation.",
+    description:
+      "A modern responsive furniture showcase homepage built with React and Tailwind CSS, designed to display room scenes and furniture products with interactive visuals and smooth navigation.",
     technologies: ["React", "Tailwind CSS", "PostCSS", "Autoprefixer"],
     features: [
       "Hero carousel with interactive image slides showing furniture and room setups",
       "Responsive layout that adjusts smoothly for mobile, tablet, and desktop screens",
       "Navigation bar with smooth scrolling between page sections",
       "About section explaining the design concepts and collection details",
-      "Clean minimalist UI focused on visual impact and simplicity"
-    ]
+      "Clean minimalist UI focused on visual impact and simplicity",
+    ],
   },
   {
     title: "Easy Bank",
     repo: "https://github.com/Sire6715/easy-bank-landing-page",
-    live: "",
+    live: "https://3asy-bank.netlify.app/",
     image: "/assets/images/Projects/digitalbank_landing_page.jpg",
     category: "Web",
-    description: "A responsive landing page for a digital banking service built as a Frontend Mentor challenge, designed to match the Easybank design and showcase key features of the bank.",
+    description:
+      "A responsive landing page for a digital banking service built as a Frontend Mentor challenge, designed to match the Easybank design and showcase key features of the bank.",
     technologies: ["HTML", "CSS", "Netlify"],
     features: [
       "Hero section introducing the bank with a call-to-action button",
@@ -396,88 +412,103 @@ export const PROJECTS: ProjectProps [] = [
       "Navigation menu with mobile toggle interaction via JavaScript",
       "Sections describing banking features: Online Banking, Budgeting, Fast Onboarding, and Open API",
       "Featured articles section with preview cards showcasing recent updates",
-      "Hover states and interactive UI elements for buttons and links"
-    ]
+      "Hover states and interactive UI elements for buttons and links",
+    ],
   },
   {
     title: "Dynamic Themed Calculator App",
     repo: "https://github.com/Sire6715/calculator",
-    live: "",
+    live: "https://calculator-app67.netlify.app/",
     image: "/assets/images/Projects/calculator_app_main.jpg",
     category: "Web",
-    description: "A dynamic themed calculator app built as a frontend challenge, letting users perform basic arithmetic operations with responsive design and theme customization.",
-    technologies: ["React", "Tailwind CSS", "React Context API"],
+    description:
+      "A dynamic themed calculator app built as a frontend challenge, letting users perform basic arithmetic operations with responsive design and theme customization.",
+    technologies: ["React", "Tailwind CSS", "React Context API", "Netlify"],
     features: [
       "Responsive layout that adjusts based on screen size for mobile, tablet, and desktop",
       "Basic mathematical operations: addition, subtraction, multiplication, and division",
       "Dynamic theme support allowing users to change color themes manually",
-      "Initial theme preference detected via system prefers-color-scheme and saved in the browser"
-    ]
+      "Initial theme preference detected via system prefers-color-scheme and saved in the browser",
+    ],
   },
   {
     title: "E-Commerce Product Page",
     repo: "https://github.com/Sire6715/E-commerce-product-page",
-    live: "",
+    live: "https://ecommerce-product-page671.netlify.app/",
     image: "/assets/images/Projects/ecommerce_product_page.jpg",
     category: "Web",
-    description: "A responsive e-commerce product details page built with React that lets users view product images, add items to a shopping cart, and interact with UI elements in a polished frontend layout.",
-    technologies: ["React", "JavaScript", "HTML", "CSS", "Create React App"],
+    description:
+      "A responsive e-commerce product details page built with React that lets users view product images, add items to a shopping cart, and interact with UI elements in a polished frontend layout.",
+    technologies: ["React", "JavaScript", "HTML", "CSS", "React Context API"],
     features: [
       "Responsive product page layout for mobile and desktop screens (mobile-first design)",
       "Image gallery with thumbnail navigation and lightbox-style image viewing",
       "Add item(s) to cart with interactive cart display",
       "Switching between product images by clicking thumbnails or arrows",
-      "Cart view where users can see items added and remove them"
-    ]
+      "Cart view where users can see items added and remove them",
+    ],
   },
   {
     title: "Random Advice Generator",
     repo: "https://github.com/Sire6715/ad-gen",
-    live: "",
+    live: "https://ad-gen.netlify.app/",
     image: "/assets/images/Projects/advice_generator_app.jpg",
     category: "Web",
-    description: "A random advice generator app that generates quotes/advice on click.",
-    technologies: ["React", "Tailwind CSS", "API Integration"],
-    features: []
+    description:
+      "A random advice generator app that generates quotes/advice on click.",
+    technologies: ["React", "Tailwind CSS", "API Integration", "Netlify"],
+    features: [],
   },
   {
     title: "IP Address Tracker",
     repo: "https://github.com/Sire6715/ip-address-tracker-master",
-    live: "",
+    live: "https://ip-address-tracker-master-lovat.vercel.app/",
     image: "/assets/images/Projects/ip-address_tracker_master.jpg",
     category: "Web",
-    description: "A responsive IP address tracker web app that lets users view geolocation information for their own or any entered IP/domain and displays the result on a map with key metadata.",
-    technologies: ["React", "JavaScript", "Axios", "Tailwind CSS", "Leaflet"],
+    description:
+      "A responsive IP address tracker web app that lets users view geolocation information for their own or any entered IP/domain and displays the result on a map with key metadata.",
+    technologies: [
+      "React",
+      "JavaScript",
+      "Axios",
+      "Tailwind CSS",
+      "Leaflet",
+      "API Integration",
+      "Vercel",
+    ],
     features: [
       "Displays geolocation details for the user's current public IP address on initial load",
       "Allows searching for any IP address or domain with updated information",
       "Shows location, city, region, country, postal code, and timezone via geo.ipify.org",
       "Interactive map component that marks the geolocation visually",
-      "Responsive UI with API integration built as a Frontend Mentor challenge"
-    ]
-  },{
+      "Responsive UI with API integration built as a Frontend Mentor challenge",
+    ],
+  },
+  {
     title: "Marketing Calls Dashboard",
     repo: "",
-    live: "",
+    live: "https://docs.google.com/spreadsheets/d/1WJWfjE35mhv0TCbpjaoJToprhMK1jv05Ppk1N5EKU_A/edit?usp=sharing",
     image: "/assets/images/Projects/Marketing_Calls_dashboard.png",
     category: "Data",
-    description: "A dynamic Google Sheets dashboard analysing marketing call outcomes across programmes, filterable by date range and programme type.",
+    description:
+      "A dynamic Google Sheets dashboard analysing marketing call outcomes across programmes, filterable by date range and programme type.",
     technologies: ["Google Sheets"],
     features: [
       "Filter by programme, start date, and end date via dropdown controls",
       "Commitment rate KPI — e.g. 32% of prospects showed commitment",
       "Unanswered call breakdown tracking ringing, not available, switched off, dropped, and invalid numbers",
       "Negative feedback theme analysis identifying top deterrents like Technical Difficulty and No Longer Interested",
-      "Dynamic bar charts that update based on selected filters"
-    ]
+      "Dynamic bar charts that update based on selected filters",
+    ],
   },
   {
     title: "Hospital Records Dashboard",
     repo: "",
-    live: "",
+    live: "https://docs.google.com/spreadsheets/d/19F1cyadfPDBamDBbIJftg2UqYI9RHt0w3u0c-NfRwpo/edit?usp=sharing",
     image: "/assets/images/Projects/Hospital_Records.png",
     category: "Data",
-    description: "A dynamic Google Sheets dashboard providing a per-doctor surgical performance summary, including procedure breakdowns, case complexity, referral types, and key clinical metrics.",
+    description:
+      "A dynamic Google Sheets dashboard providing a per-doctor surgical performance summary, including procedure breakdowns, case complexity, referral types, and key clinical metrics.",
     technologies: ["Google Sheets"],
     features: [
       "Doctor-level filter via dropdown to switch between surgeons",
@@ -485,7 +516,7 @@ export const PROJECTS: ProjectProps [] = [
       "Key metrics: mortality rate, average patient age, avg. time to surgery, avg. length of stay",
       "Procedure frequency table listing all operation types and counts",
       "Case complexity breakdown across Routine, Moderate, High-Risk, Complex, and Critical",
-      "Referral type distribution covering Urgent, Elective, Emergency, and inter-hospital referrals"
-    ]
+      "Referral type distribution covering Urgent, Elective, Emergency, and inter-hospital referrals",
+    ],
   },
 ];
