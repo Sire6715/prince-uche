@@ -4,7 +4,7 @@ import ThemeToggle from "../portfolio/ThemeToggle";
 
 const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
   return (
-    <nav className="bg-background text-foreground lg:px-12 lg:py-6 flex justify-between align-middle">
+    <nav className="sticky bg-background text-foreground lg:px-12 lg:py-6 flex justify-between align-middle">
       <div>
         <Link href="/">
             <h1 className="font-black text-4xl lg:text-6xl p-6 lg:m-0 lg:p-0">UP</h1>
@@ -43,7 +43,7 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
             <li className="font-bold text-xl  hover:text-primary hover:scale-110 transition-colors">
               <Link href="/resume">RESUME</Link>
             </li>
-            <li className="font-bold text-xl hover:text-primary hover:scale-110 transition-colors">
+            <li className=" font-bold text-xl hover:text-primary hover:scale-110 transition-colors">
               <Link href={"mailto:uchepibe@gmail.com"}>CONTACT</Link>
             </li>
           </ul>

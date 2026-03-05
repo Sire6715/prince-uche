@@ -15,7 +15,7 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 z-40 bg-black/50"
+            className="fixed inset-0 z-50 bg-black/50"
           />
           <motion.div
             initial={{ x: "100%" }}
@@ -67,7 +67,6 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
 
             <div className="flex items-center justify-between pt-6 border-t border-border">
               <IconLabel contacts={CONTACTS} />
-              <ThemeToggle />
             </div>
           </motion.div>
         </>

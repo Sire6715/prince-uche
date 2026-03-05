@@ -18,6 +18,16 @@ export interface SkillProps {
   color?: string;
 }
 
+export interface ProjectProps {
+  title: string;
+  repo: string;
+  live: string;
+  image: string;
+  category: string | string[];
+  description: string;
+  technologies: string[];
+  features: string[];
+}
 export interface TimelineItemProps {
   role: string;
   company: string;
@@ -32,4 +42,5 @@ export interface CertificationProps {
   issuer: string;
   period: string;
   link: string;
+  description: string;
 }
