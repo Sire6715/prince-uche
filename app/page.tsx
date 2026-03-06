@@ -7,7 +7,7 @@ import { CONTACTS } from "@/constants";
 import Link from "next/link";
 
 // Pencil-stroke underline component using --primary color
-function Highlight({ children }: { children: React.ReactNode }) {
+export function Highlight({ children }: { children: React.ReactNode }) {
   return (
     <span className="relative inline-block">
       {children}
@@ -34,7 +34,7 @@ function Highlight({ children }: { children: React.ReactNode }) {
 
 export default function Home() {
   return (
-    <div className="px-5 lg:px-0 min-h-screen flex flex-col items-center justify-center font-sans bg-background text-foreground py-16">
+    <div className="px-5 lg:px-0  min-h-screen flex flex-col items-center justify-center font-sans bg-background text-foreground pt-16 pb-23">
       <div className="lg:w-[70%] max-w-full w-full">
 
         {/* Hero Section*/}
@@ -76,8 +76,8 @@ export default function Home() {
               Hi, I&apos;m Prince, an analyst and a developer driven by a curiosity to
               understand how things work and a genuine desire to build solutions
               that are both meaningful and impactful. My path into tech started
-              with a Degree in Mathematics from the Federal University of
-              Technology, Owerri, which gave me a strong foundation in{" "}
+              with a <Highlight>Degree in Mathematics from the Federal University of
+              Technology, Owerri</Highlight>, which gave me a strong foundation in{" "}
               <Highlight>statistical thinking</Highlight> and{" "}
               <Highlight>quantitative analysis</Highlight>. Turns out, spending
               years solving equations is actually great preparation for staring

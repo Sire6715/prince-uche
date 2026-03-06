@@ -51,7 +51,7 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
               {[
                 { label: "HOME", href: "/" },
                 { label: "RESUME", href: "/resume" },
-                { label: "CONTACT", href: "mailto:uchepibe@gmail.com" },
+                { label: "CONTACT", href: "contact" },
                 { label: "PROJECTS", href: "/projects" },
               ].map((item) => (
                 <Link

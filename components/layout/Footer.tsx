@@ -36,7 +36,7 @@ const Footer = () => {
           </Link>
 
           <Link
-            href="https://github.com/Sire6715"
+            href="https://github.com/Sire6715/prince-uche"
             target="_blank"
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}

@@ -44,7 +44,7 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
               <Link href="/resume">RESUME</Link>
             </li>
             <li className=" font-bold text-sm nav-link hover:scale-110 transition-colors">
-              <Link href={"mailto:uchepibe@gmail.com"}>CONTACT</Link>
+              <Link href="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>

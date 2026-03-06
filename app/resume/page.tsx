@@ -1,11 +1,12 @@
 "use client"
 import { ArrowChevron } from "@/components/common/Arrows";
 import SectionBlock from "@/components/common/SectionBlock";
-import IconLabel from "@/components/common/IconLabel";
-import { CONTACTS, SKILLS } from "@/constants";
+import { SKILLS } from "@/constants";
 import Skills from "@/components/portfolio/Skills";
 import Link from "next/link";
 import Experience from "@/components/portfolio/Expereince";
+import { Highlight } from "../page";
+
 
 export default function Resume() {
   return (
@@ -47,11 +48,11 @@ export default function Resume() {
           />
           <p className="text-sm lg:text-xl">
             If required you can{" "}
-            <Link href={"mailto:uchepibe@gmail.com"}>
-              <span className="font-bold text-foreground decoration-warning decoration-2 hover:text-primary underline">
+            <Link href="/assets/resume/Prince_Uche_CV.docx.pdf">
+              <Highlight>
                 {" "}
                 Download my resume here.
-              </span>
+              </Highlight>
             </Link>
           </p>
           <div className="min-h-screen">
