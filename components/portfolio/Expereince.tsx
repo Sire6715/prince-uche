@@ -1,4 +1,4 @@
-import { WORK_EXPERIENCE, EDUCATION } from "@/constants";
+import { WORK_EXPERIENCE } from "@/constants";
 import TimelineItem from "../common/TimelineItem";
 import { CERTIFICATIONS } from "@/constants";
 import CertificationItem from "../common/CertificationItem";

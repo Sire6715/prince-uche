@@ -6,7 +6,7 @@ const IconLabel = ({ contacts }: { contacts: IconLabelProps[] }) => {
     <ul className="flex w-full gap-5">
       {contacts.map((c) => (
         <li key={c.label}>
-          <Link href={c.link} className="flex gap-2 items-middle text-sm font-medium">
+          <Link href={c.link} className="flex gap-2 items-middle text-sm font-medium hover:text-primary">
             {c.icon}
             <span className="hidden lg:block">{c.label}</span>
           </Link>

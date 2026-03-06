@@ -7,7 +7,7 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
     <nav className="sticky bg-background text-foreground lg:px-12 lg:py-6 flex justify-between align-middle">
       <div>
         <Link href="/">
-            <h1 className="font-black text-4xl lg:text-6xl p-6 lg:m-0 lg:p-0">UP</h1>
+            <h1 className="font-black text-4xl lg:text-6xl p-6 lg:m-0 lg:p-0">PU</h1>
         </Link>   
       </div>
 
@@ -40,10 +40,10 @@ const Header = ({ onMenuClick }: { onMenuClick?: () => void }) => {
       <div className="hidden lg:flex gap-4 justify-center items-center">
         <div className="mr-8">
           <ul className="flex gap-6">
-            <li className="font-bold text-xl  hover:text-primary hover:scale-110 transition-colors">
+            <li className="font-bold text-sm nav-link hover:scale-110 transition-colors">
               <Link href="/resume">RESUME</Link>
             </li>
-            <li className=" font-bold text-xl hover:text-primary hover:scale-110 transition-colors">
+            <li className=" font-bold text-sm nav-link hover:scale-110 transition-colors">
               <Link href={"mailto:uchepibe@gmail.com"}>CONTACT</Link>
             </li>
           </ul>

@@ -239,15 +239,15 @@ export const WORK_EXPERIENCE: TimelineItemProps[] = [
   },
 ];
 
-export const EDUCATION: TimelineItemProps[] = [
-  {
-    role: "B.Tech. Mathematics",
-    company: "Federal University of Technology, Owerri",
-    period: "Jan 2019 – Dec 2024",
-    location: "Imo State, Nigeria",
-    bullets: [""],
-  },
-];
+// export const EDUCATION: TimelineItemProps[] = [
+//   {
+//     role: "B.Tech. Mathematics",
+//     company: "Federal University of Technology, Owerri",
+//     period: "Jan 2019 – Dec 2024",
+//     location: "Imo State, Nigeria",
+//     bullets: [""],
+//   },
+// ];
 
 export const CERTIFICATIONS: CertificationProps[] = [
   {
@@ -299,7 +299,7 @@ export const CERTIFICATIONS: CertificationProps[] = [
       "Managed repositories, created feature branches, reviewed pull requests, resolved merge conflicts, and collaborated on shared codebases using GitHub best practices.",
   },
   {
-    label: "B.Tech. Mathematics",
+    label: "Bachelor Of Technology In Mathematics",
     issuer: "Federal University of Technology, Owerri",
     period: "| Jan 2019 – Dec 2024",
     link: "Imo State, Nigeria",
@@ -337,10 +337,10 @@ export const PROJECTS: ProjectProps[] = [
     title: "Personal Portfolio",
     repo: "https://github.com/Sire6715/prince-uche",
     live: "https://prince-uche.vercel.app/",
-    image: "",
+    image: "/assets/images/Projects/portfolio.png",
     category: "Web",
     description:
-      "A personal portfolio site built with Next.js, showcasing projects and identity as a developer.",
+      "My personal portfolio site built with Next.js, showcasing my projects and identity as a developer.",
     technologies: ["Next.js", "TypeScript", "CSS"],
     features: [
       "Home page, resume section, and links to projects",

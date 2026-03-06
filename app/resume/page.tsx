@@ -16,7 +16,7 @@ export default function Resume() {
           title_style="text-xl lg:text-5xl bg-background text-foreground font-bold"
           body_style="text-sm lg:text-xl leading-4 lg:leading-7 lg:text-xl  text-foreground"
           body={
-            "Data-driven Front-End Developer and Analyst with 3+ years of experience leveraging Python, SQL, and modern JavaScript frameworks to solve complex business problems. Experienced in uncovering patterns, optimizing workflows, and building interactive dashboards and web applications that turn data into practical insights. Strong problem-solver with a passion for using analytics to support innovation and evidence-based decision-making."
+            "Data-driven Front-End Developer and Analyst with 2+ years of experience leveraging modern frameworks and tools to solve complex business problems. Experienced in uncovering patterns, optimizing workflows, and building interactive dashboards and web applications that turn data into practical insights. Strong problem-solver with a passion for using analytics to support innovation and evidence-based decision-making."
           }
         />
         <div>

@@ -1,11 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import ThemeToggle from "../portfolio/ThemeToggle";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="fixed bottom-6 left-0 right-0 flex justify-center z-40 px-4">
       <footer
-        className="flex justify-between items-center px-6 lg:px-10 py-3 rounded-2xl w-full max-w-5xl "
+        onClick={scrollToTop}
+        className="flex justify-between items-center px-6 lg:px-10 py-3 rounded-2xl w-full max-w-5xl cursor-pointer"
         style={{
           background: "rgba(255, 255, 255, 0.08)",
           backdropFilter: "blur(20px) saturate(180%)",
@@ -22,6 +29,7 @@ const Footer = () => {
         <div className="flex gap-5 items-center">
           <Link
             href="/projects"
+            onClick={(e) => e.stopPropagation()}
             className="text-sm font-semibold text-foreground/70 hover:text-foreground transition-colors duration-200 tracking-wide"
           >
             PROJECTS
@@ -31,6 +39,7 @@ const Footer = () => {
             href="https://github.com/Sire6715"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
             className="text-foreground/70 hover:text-foreground transition-colors duration-200"
           >
             <svg
@@ -54,7 +63,8 @@ const Footer = () => {
             </svg>
           </Link>
         </div>
-        <div className="lg:hidden">
+
+        <div className="lg:hidden" onClick={(e) => e.stopPropagation()}>
           <ThemeToggle />
         </div>
       </footer>

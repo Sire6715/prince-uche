@@ -26,12 +26,39 @@ body {
   font-family: var(--font-red-hat-display), sans-serif;
 }
 
-p, li, blockquote, label, input, textarea {
+p,
+li,
+blockquote,
+label,
+input,
+textarea {
   font-family: var(--font-outfit), sans-serif;
 }
 
 * {
-  transition: background-color 0.4s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.4s ease,
+    border-color 0.3s ease;
+}
+
+.nav-link {
+  position: relative;
+  letter-spacing: 0.12em;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--color-primary);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
 }
 
 @theme {
@@ -53,7 +80,7 @@ p, li, blockquote, label, input, textarea {
 
   --color-success: rgb(34 197 94);
   --color-warning: rgb(234 179 8);
-  --color-destructive: rgb(239 68 68);
+
 
   --font-sans: var(--font-red-hat-display);
   --font-body: var(--font-outfit);
@@ -74,6 +101,7 @@ p, li, blockquote, label, input, textarea {
 
   --color-border: rgb(45 38 90);
   --color-border-strong: rgb(70 58 130);
+  --color-warning: rgb(52 211 153);
 
   --font-sans: var(--font-red-hat-display);
   --font-body: var(--font-outfit);

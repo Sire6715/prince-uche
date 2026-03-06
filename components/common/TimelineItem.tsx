@@ -21,13 +21,13 @@ export default function TimelineItem({
   location,
   bullets,
   delay = 0,
-  isLast=false
+  isLast = false,
 }: TimelineItemProps) {
   return (
     <div className="relative pl-12 lg:pl-25 pb-14 min-h-2 ">
       {!isLast && (
-    <div className="absolute left-2.25 top-5 bottom-0 w-0.5 bg-foreground-muted" />
-  )}
+        <div className="absolute left-2.25 top-5 bottom-0 w-0.5 bg-foreground-muted" />
+      )}
       <span className="absolute left-0 top-1.5 z-10 flex h-5 w-5 items-center cursor-pointer justify-center bg-primary hover:bg-primary-hover rounded-full ring-4 ring-foreground-muted shadow-[0_0_0_2px_#c850c0] border-2 border-white" />
       {/* Animated Content */}
       <motion.div
@@ -36,7 +36,7 @@ export default function TimelineItem({
         exit={{ opacity: 0, y: 16 }}
         viewport={{ once: false, amount: 0.15 }}
         transition={{
-          duration: 0.50,
+          duration: 0.5,
           ease: "easeOut",
           delay: delay / 1000,
         }}
@@ -59,13 +59,16 @@ export default function TimelineItem({
         </p>
 
         <ul className="list-none pl-4 space-y-2">
-  {bullets.map((point, i) => (
-    <li key={i} className="flex items-start gap-2 text-sm lg:text-xl leading-relaxed text-foreground">
-      <span className="mt-2 lg:mt-3 shrink-0 w-1.5 h-1.5 bg-foreground-muted rotate-45" />
-      {point}
-    </li>
-  ))}
-</ul>
+          {bullets.map((point, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-2 text-sm lg:text-xl leading-relaxed text-foreground"
+            >
+              <span className="mt-2 lg:mt-3 shrink-0 w-1.5 h-1.5 bg-foreground-muted rotate-45" />
+              {point}
+            </li>
+          ))}
+        </ul>
       </motion.div>
     </div>
   );
