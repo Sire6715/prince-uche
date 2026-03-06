@@ -76,7 +76,7 @@ export default function Home() {
               Hi, I&apos;m Prince, an analyst and a developer driven by a curiosity to
               understand how things work and a genuine desire to build solutions
               that are both meaningful and impactful. My path into tech started
-              with a <Highlight>Degree in Mathematics from the Federal University of
+              with a <Highlight>Degree in Mathematics </Highlight> <Highlight> from the Federal University of
               Technology, Owerri</Highlight>, which gave me a strong foundation in{" "}
               <Highlight>statistical thinking</Highlight> and{" "}
               <Highlight>quantitative analysis</Highlight>. Turns out, spending
