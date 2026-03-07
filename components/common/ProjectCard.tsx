@@ -84,7 +84,7 @@ export default function ProjectCard({ project }: { project: ProjectProps }) {
             </button>
 
             <div
-              className="overflow-hidden transition-all duration-[400ms] ease-in-out"
+              className="overflow-hidden transition-all duration-400 ease-in-out"
               style={{ maxHeight: expanded ? "400px" : "0" }}
             >
               <ul className="mt-2.5 mb-0 pl-4 flex flex-col gap-1.5 list-disc">

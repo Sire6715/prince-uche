@@ -26,7 +26,7 @@ export default function CertificationItem({
       {!isLast && (
     <div className="absolute left-2.25 top-5 bottom-0 w-0.5 bg-foreground-muted" />
   )}
-      <span className="absolute left-0 top-1.5 z-10 flex h-5 w-5 items-center cursor-pointer justify-center bg-primary hover:bg-primary-hover rounded-full bg-primary ring-4 ring-foreground-muted shadow-[0_0_0_2px_#c850c0] border-2 border-white" />
+      <span className="absolute left-0 top-1.5 z-10 flex h-5 w-5 items-center cursor-pointer justify-center bg-primary hover:bg-primary-hover rounded-full  ring-4 ring-foreground-muted shadow-[0_0_0_2px_#c850c0] border-2 border-white" />
 
       <motion.div
         initial={{ opacity: 0, y: 14 }}

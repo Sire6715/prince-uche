@@ -54,7 +54,7 @@ export default function Home() {
           </div>
 
 
-          <div className="flex-shrink-0 flex justify-center lg:justify-end">
+          <div className="shrink-0 flex justify-center lg:justify-end">
             <div className="relative w-52 h-52 lg:w-72 lg:h-72 rounded-2xl overflow-hidden ring-2 ring-primary/30 shadow-xl">
               <Image
                 src="/assets/images/profile/Prince.jpg"

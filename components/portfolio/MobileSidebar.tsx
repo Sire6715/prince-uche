@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import ThemeToggle from "../portfolio/ThemeToggle";
 import { CONTACTS } from "@/constants";
 import { motion, AnimatePresence } from "framer-motion";
 import IconLabel from "../common/IconLabel";
@@ -22,11 +21,11 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3, ease: "easeInOut" }}
-            className="fixed top-0 right-0 z-50 h-full w-full bg-background text-foreground flex flex-col px-8 py-6"
+            className="fixed top-0 right-0 z-50 min-h-screen h-full w-full bg-background text-foreground flex flex-col px-8 py-6"
           >
             {/* Header row */}
             <div className="flex justify-between items-center mb-12">
-              <h1 className="font-black text-4xl">UP</h1>
+              <h1 className="font-black text-4xl">PU</h1>
               <button onClick={onClose} aria-label="Close menu">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,8 +50,8 @@ const MobileSidebar = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => vo
               {[
                 { label: "HOME", href: "/" },
                 { label: "RESUME", href: "/resume" },
-                { label: "CONTACT", href: "contact" },
                 { label: "PROJECTS", href: "/projects" },
+                { label: "CONTACT", href: "/contact" },
               ].map((item) => (
                 <Link
                   key={item.label}

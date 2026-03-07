@@ -38,7 +38,7 @@ export default function ProjectsSection() {
             My Projects
           </h2>
           <p className="text-sm lg:text-xl leading-4 lg:leading-7 text-foreground mt-3">
-            A collection of things Ive built — filter by category or tech stack.
+            Here is a collection of personal things I&apos;ve built. Filter by category or tech stack.
           </p>
         </div>
 
